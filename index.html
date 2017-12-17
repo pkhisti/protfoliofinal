@@ -5,41 +5,34 @@
    <link rel="stylesheet" type="text/css" href="style/style.css">
    <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script lang="javascript">
-        function getGithubData(){
-            fetch("https://api.github.com/users/pkhisti/repos")
-            .then((response)=>{
-                response.json().then(data=>{
-                        let mainDiv = $("#main");
-                        let count = 1;
-                        data.forEach(item=>{
-                            if(count < 4) {
-                                 mainDiv.append("<div class=\"projects\"><img class=\"subImage\"  src=\"images/book"+count+".jpg\" alt=\"logo\"><div class=\"projectTitle\">"+ item.name +"</div></div>");
-                                 count = count + 1;
-                            }
-                        });
-                });
-            }).catch((error)=>{
-                console.log(error.message);
-            });
-        }
-       </script>
+    <script src="script/main.js"></script>
     </head>
    <body onload=getGithubData()>
        <header class="header">
            <div class="headerlogo"><img class="headerImage" src="images/download.png" alt="logo"></div>
            <div class="headerTitle">
-               <div class="headerBannerTitle">Priya Khisti</div>
+               <h1 class="headerBannerTitle">Priya Khisti</h1>
                <div class="headerBannerDesc">Front-end Ninja</div>
            </div>
        </header>
        <div class="content" id="main">
             <div class="main">
-                <img class="mainImage"  src="images/images.jpeg" alt="logo">
+                 <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img class="mainImage"  src="images/images.jpeg" alt="logo">
             </div>
              <div class="main">
                <p class="featured">Featured Work</p>
             </div>
        </div>
+       <footer class="footer">
+           Sample text for the footer
+       </footer>
    </body>
 </html>

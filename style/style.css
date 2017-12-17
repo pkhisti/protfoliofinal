@@ -6,37 +6,39 @@ body {
   font-family: Arial, Helvetica, sans-serif
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 .header {
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    border-bottom-color: #7d97ad;
-    border-bottom-style: solid;
-     border-bottom-width: 4px;
-    flex-direction:row;
-    justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  border-bottom-color: #7d97ad;
+  border-bottom-style: solid;
+  border-bottom-width: 4px;
+  flex-direction:row;
+  justify-content: space-between;
 }
-.headerImage{
-    width: 100px;
+.headerImage {
+  width: 100px;
 }
-.headerlogo{
-    width: 50%;
+
+.headerlogo {
+  width: 10%;
 }
+
 .headerTitle{
   flex:0 0 auto;
+  width: auto;
 }
+
 .headerBannerTitle{
   flex:0 0 auto;
   font-weight: lighter;
   font-size: 3em;
   text-transform: uppercase;
+  width: auto;
 }
+
 .headerBannerDesc{
   font-weight: normal;
   font-size: 1.4em;
@@ -51,24 +53,29 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .main{
      flex:0 0 auto;
-     padding: 20px 0;
+     padding: 0px 0;
      width: 100%;
 }
+
 .mainImage{
   width: 100%;
 }
+
 .subImage{
   width: 100%;
   height: auto;
 }
+
 .projects{
     padding-bottom: 25px;
     margin:25px;
     width: 275px;
     height: 300px;
 }
+
 .featured {
   color: #7d97ad;
   font-size: 2.4em;
@@ -80,4 +87,47 @@ h1 {
     padding:5px;
     margin-top: 5px;
     text-align: center;
+}
+
+nav {
+  width:100%;
+  background: #7d97ad;;
+  border: 1px solid #7d97ad;
+  border-right: none;
+  margin-bottom: 2px;
+  height: 42px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+    border-left: 1px solid #7d97ad;;
+    border-right: 1px solid lightgray;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 0;
+}
+
+.footer{
+  display: flex;
+  width: auto;
+  background-color: lightgray;
+  height: 20px;
+  margin-top: 35px;
+  padding: 20px;
+  font-size: .9em;
+  align-items: center;
+  justify-content: center;
 }
