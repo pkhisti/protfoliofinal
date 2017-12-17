@@ -28,7 +28,7 @@ h1 {
 .headerlogo{
     width: 50%;
 }
-headerTitle{
+.headerTitle{
   flex:0 0 auto;
 }
 .headerBannerTitle{
@@ -61,7 +61,7 @@ headerTitle{
 }
 .subImage{
   width: 100%;
-  height: 280px;
+  height: auto;
 }
 .projects{
     padding-bottom: 25px;
